@@ -4,11 +4,11 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "id17980381_sensordata";
+$dbname = "xxxx";
 // REPLACE with Database user
-$username = "id17980381_marvel";
+$username = "xxxx";
 // REPLACE with Database user password
-$password = "roomMonitoring123#";
+$password = "xxxx";
 
 // Keep this API Key value to be compatible with the ESP32 code provided in the project page. 
 // If you change this value, the ESP32 sketch needs to match
