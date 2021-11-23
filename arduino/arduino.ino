@@ -5,7 +5,7 @@ uint8_t mac[6] = {0x00,0x01,0x02,0x03,0x04,0x05};
 
 #include <DHT.h>
 
-#define DHTPIN 8
+#define DHTPIN 6
 
 #define DHTTYPE DHT11
 
@@ -16,15 +16,21 @@ DHT dht(DHTPIN, DHTTYPE);
 #define co2Zero     55                        //calibrated CO2 0 level
 #define led          13                        //led on pin 9
 
+#define pm25Pin 3 
+#define pm10Pin 5 
+
 uint32_t timer;
 
 void setup() {
+  
   dht.begin();
   pinMode(anInput,INPUT);                     //MQ135 analog feed set for input
   pinMode(digTrigger,INPUT);                  //MQ135 digital feed set for input
   pinMode(led,OUTPUT);                        //led set for output
   Serial.begin(9600);
 
+  pinMode(pm25Pin, INPUT); 
+  pinMode(pm10Pin, INPUT); 
   
 }
 
@@ -56,15 +62,17 @@ for (int x = 0;x<10;x++){                     //add samples together
   String Sco2PPM = String(co2ppm);
   String temp = String(t);
   String hum = String(h);
+  String pm2_5 = String(pulseIn(pm25Pin, HIGH, 1500000) / 1000 - 2);
+  String pm10 = String(pulseIn(pm10Pin, HIGH, 1500000) / 1000 - 2);
   Serial.println(temp+" "+hum);
   Serial.println(Sco2PPM);
-
+  Serial.println(pm2_5);
+  Serial.println(pm10);
   String apiKeyValue = "tPmAT5Ab3j7F9";
 
   char server[] = "http://marvelroommonitor.000webhostapp.com";
 
-  String data = "api_key=" + apiKeyValue + "&value1=" + temp + "&value2=" + hum + "&value3=" + Sco2PPM + "";
-
+  String data = "value1=" + temp + "&value2=" + hum + "&value3=" + Sco2PPM + "&value4=" + pm2_5 + "";
   if(Ethernet.begin(mac) == 0){
     Serial.println("Failed to configure Ethernet using DHCP");
     while(1);
