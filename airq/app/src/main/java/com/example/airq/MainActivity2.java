@@ -37,6 +37,10 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         recyclerView = findViewById(R.id.lista);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar !=null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         listi = new ArrayList<>();
         extractListi();
     }
