@@ -56,6 +56,7 @@ $conn->close();
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <style>
     body {
       min-width: 310px;
@@ -177,6 +178,12 @@ var chartQ = new Highcharts.Chart({
   credits: { enabled: false }
 });
 
+</script>
+
+<script>
+        $(document).ready(function(){
+            $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
+        });
 </script>
 </body>
 </html>
