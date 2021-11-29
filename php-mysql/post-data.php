@@ -4,17 +4,17 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "xxxx";
+$dbname = "";
 // REPLACE with Database user
-$username = "xxxx";
+$username = "";
 // REPLACE with Database user password
-$password = "xxxx";
+$password = "";
 
 // Keep this API Key value to be compatible with the ESP32 code provided in the project page. 
 // If you change this value, the ESP32 sketch needs to match
-$api_key_value = "tPmAT5Ab3j7F9";
+$api_key_value = "";
 
-$api_key= $value1 = $value2 = $value3 = "";
+$api_key= $value1 = $value2 = $value3 = $value4 = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $value1 = test_input($_POST["value1"]);
         $value2 = test_input($_POST["value2"]);
         $value3 = test_input($_POST["value3"]);
+        $value4 = test_input($_POST["value4"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . $conn->connect_error);
         } 
         
-        $sql = "INSERT INTO Sensor(value1, value2, value3)
-        VALUES ('" . $value1 . "', '" . $value2 . "', '" . $value3 . "')";
+        $sql = "INSERT INTO Sensor(value1, value2, value3, value4)
+        VALUES ('" . $value1 . "', '" . $value2 . "', '" . $value3 . "', '" . $value4 . "')";
         
-        $sql1 = "UPDATE SensorMomentary SET value1 = '" . $value1 . "', value2 = '" . $value2 . "', value3 = '" . $value3 . "' WHERE id=1";
+        $sql1 = "UPDATE SensorMomentary SET value1 = '" . $value1 . "', value2 = '" . $value2 . "', value3 = '" . $value3 . "', value4 = '" . $value4 . "' WHERE id=1";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";

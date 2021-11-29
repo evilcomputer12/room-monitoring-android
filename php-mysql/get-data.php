@@ -4,15 +4,15 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "xxxx";
+$dbname = "";
 // REPLACE with Database user
-$username = "xxxx";
+$username = "";
 // REPLACE with Database user password
-$password = "xxxx";
+$password = "";
 
 // Keep this API Key value to be compatible with the ESP32 code provided in the project page. 
 // If you change this value, the ESP32 sketch needs to match
-$api_key_value = "tPmAT5Ab3j7F9";
+$api_key_value = "";
 
 $api_key= $value1 = $value2 = $value3 = "";
 
@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         while ($row = mysqli_fetch_assoc($result)) {
            $_ResultSet[] = $row;
         }
+           header("Content-type: application/json; charset=utf-8");
            echo json_encode($_ResultSet); 
     
         $conn->close();
