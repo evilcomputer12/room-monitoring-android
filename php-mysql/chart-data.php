@@ -72,10 +72,12 @@ $conn->close();
   </style>
   <body>
     <h2>Air Quality Monitor Graph</h2>
+    <div id="chart">
     <div id="chart-temperature" class="container"></div>
     <div id="chart-humidity" class="container"></div>
     <div id="chart-co2" class="container"></div>
     <div id="chart-pm25" class="container"></div>
+    </div>
 <script>
 
 var value1 = <?php echo $value1; ?>;
@@ -184,6 +186,13 @@ var chartQ = new Highcharts.Chart({
         $(document).ready(function(){
             $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
         });
+</script>
+<script type="text/javascript">
+$(document).ready (function () {
+    var updater = setTimeout (function () {
+        $('#chart').load ('chart-data.php', 'update=true');
+    }, 1000);
+});
 </script>
 </body>
 </html>
