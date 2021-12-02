@@ -15,8 +15,7 @@ $password = "";
       $connect = mysqli_connect($servername, $username, $password, $dbname);  
       $output = '';
       $query = "  
-           SELECT * FROM Sensor  
-           WHERE reading_time BETWEEN '".$_POST["from_date"]."' AND '".$_POST["to_date"]."' ORDER BY reading_time DESC 
+           SELECT * FROM Sensor WHERE reading_time >= '".$_POST["from_date"]."' AND reading_time <= '".$_POST["to_date"]."' ORDER BY reading_time DESC 
       ";  
       $result = mysqli_query($connect, $query);  
       $output .= '
