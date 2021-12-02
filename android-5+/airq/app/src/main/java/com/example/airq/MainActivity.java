@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                     builder.setAutoCancel(true);
                     NotificationManagerCompat managerCompat = NotificationManagerCompat.from(MainActivity.this);
                     managerCompat.notify(1, builder.build());
-                    startForegroundService(notIntent);
+                    context.startForegroundService(notIntent);
                 }
 
 

@@ -40,6 +40,12 @@ public class ActivityMain3 extends AppCompatActivity {
         final String webServer = getString(R.string.webserver);
         final String url = "/history-table.php";
         String url1 = "/chart-data.php";
+        webView.loadUrl(webServer+url);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
 
         swipeLayout = findViewById(R.id.swipe_container);
         // Adding Listener
@@ -80,6 +86,12 @@ public class ActivityMain3 extends AppCompatActivity {
             final String webServer = getString(R.string.webserver);
             final String url = "/history-table.php";
             final String url1 = "/chart-data.php";
+            webView.loadUrl(webServer+url);
+            WebSettings webSettings = webView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+            webSettings.setDomStorageEnabled(true);
+            webSettings.setLoadWithOverviewMode(true);
+            webSettings.setUseWideViewPort(true);
 
             swipeLayout = findViewById(R.id.swipe_container);
             // Adding Listener
@@ -110,6 +122,12 @@ public class ActivityMain3 extends AppCompatActivity {
             final String url = "/history-table.php";
             final String url1 = "/chart-data.php";
             swipeLayout = findViewById(R.id.swipe_container);
+            webView.loadUrl(webServer+url);
+            WebSettings webSettings = webView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+            webSettings.setDomStorageEnabled(true);
+            webSettings.setLoadWithOverviewMode(true);
+            webSettings.setUseWideViewPort(true);
             // Adding Listener
             swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override

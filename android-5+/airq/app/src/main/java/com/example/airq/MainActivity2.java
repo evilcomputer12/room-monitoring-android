@@ -45,6 +45,7 @@ public class MainActivity2 extends AppCompatActivity {
         ActionBar actionBar = (ActionBar) getActionBar();
         if(actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
+            extractListi();
         }
         swipeLayout = findViewById(R.id.swipe_container);
         // Adding Listener
