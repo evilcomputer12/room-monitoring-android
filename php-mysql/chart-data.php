@@ -4,11 +4,11 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "";
+$dbname = "id17980381_sensordata";
 // REPLACE with Database user
-$username = "";
+$username = "id17980381_marvel";
 // REPLACE with Database user password
-$password = "";
+$password = "roomMonitoring123#";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -187,11 +187,15 @@ var chartQ = new Highcharts.Chart({
             $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
         });
 </script>
-<script type="text/javascript">
-$(document).ready (function () {
-    var updater = setTimeout (function () {
-        $('#chart').load ('chart-data.php', 'update=true');
-    }, 1000);
+<script>
+function doRefresh(){
+    $('#chart-temperature').load("#chart-temperature");
+    $('#chart-humidity').load("#chart-humidity");
+    $('#chart-co2').load("#chart-co2");
+    $('#chart-pm25').load("#chart-pm25");
+}
+$(function() {
+    setInterval(doRefresh, 5000);
 });
 </script>
 </body>
