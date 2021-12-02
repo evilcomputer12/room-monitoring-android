@@ -1,4 +1,5 @@
 #include <UIPEthernet.h>
+#include <avr/wdt.h>
 
 EthernetClient client;
 uint8_t mac[6] = {0x00,0x01,0x02,0x03,0x04,0x05};
@@ -32,6 +33,12 @@ void setup() {
   pinMode(pm25Pin, INPUT); 
   pinMode(pm10Pin, INPUT); 
   
+}
+
+void reboot() {
+  wdt_disable();
+  wdt_enable(WDTO_15MS);
+  while (1) {}
 }
 
 void postData() {
@@ -90,8 +97,13 @@ for (int x = 0;x<10;x++){                     //add samples together
       client.println();
   }else{
       Serial.println("Connection to server failed");
+      delay(1000);
+      reboot();
   }  
 }
+
+
+
 void loop() {  
   while(client.connected()){
     if(client.available()){
@@ -101,7 +113,12 @@ void loop() {
   }
 
   if (millis() > timer) {
-  timer = millis() + 60000;
+  timer = millis() + 59000;
   postData();
+  }
+
+  if (millis() > timer) {
+  timer = millis() + 3600000;
+  reboot();
   }
 }
