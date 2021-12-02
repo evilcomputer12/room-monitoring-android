@@ -22,6 +22,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
+import android.os.Vibrator;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -176,19 +177,21 @@ public class MainActivity extends AppCompatActivity {
                 lst_update.setText("Последно превземање: " + last_update);
                 if(ppm_co2 > 1000 || airq>100){
                     final MediaPlayer alarm = MediaPlayer.create(MainActivity.this, R.raw.alarm);
+                    Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    v.vibrate(400);
                     alarm.start();
                     NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this, "Alarm");
                     builder.setContentTitle("Alarm");
                     builder.setContentText("Има голема загаденост во просторијата");
                     builder.setSmallIcon(R.drawable.ic_stat_new_releases);
-                    Intent notIntent = new Intent();
+                    Context context = getApplicationContext();
+                    Intent notIntent = new Intent(context, MainActivity.class);
                     PendingIntent contentIntent = PendingIntent.getActivity(MainActivity.this,0, notIntent,0);
                     builder.setContentIntent(contentIntent);
                     builder.setAutoCancel(true);
                     NotificationManagerCompat managerCompat = NotificationManagerCompat.from(MainActivity.this);
                     managerCompat.notify(1, builder.build());
-                    Context context = getApplicationContext();
-                    context.startForegroundService(notIntent);
+                    startForegroundService(notIntent);
                 }
 
 
