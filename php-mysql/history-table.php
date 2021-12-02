@@ -39,6 +39,8 @@ $api_key= $value1 = $value2 = $value3 = "";
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.js" integrity="sha512-+UiyfI4KyV1uypmEqz9cOIJNwye+u+S58/hSwKEAeUMViTTqM9/L4lqu8UxJzhmzGpms8PzFJDzEqXL9niHyjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" href="styles.css">
 	</head> 
 	<body> 
@@ -46,10 +48,10 @@ $api_key= $value1 = $value2 = $value3 = "";
 	<br /><br />  
 	<div class="container">
 	<div class="col-md-3">  
-    <input type="text" name="from_date" id="from_date" class="form-control" placeholder="From Date" />  
+    <input type="text" name="from_date" id="from_date" class="form-control" placeholder="Од датум/час" />  
     </div>  
     <div class="col-md-3">  
-    <input type="text" name="to_date" id="to_date" class="form-control" placeholder="To Date" />  
+    <input type="text" name="to_date" id="to_date" class="form-control" placeholder="До датум/час" />  
     </div>  
     <div class="col-md-5">  
     <input type="button" name="Филтрирај" id="filter" value="Филтрирај" class="btn btn-info" />  
@@ -94,15 +96,11 @@ $api_key= $value1 = $value2 = $value3 = "";
             $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
         });
 </script>
-</script>
 <script>  
       $(document).ready(function(){  
-           $.datepicker.setDefaults({  
-                dateFormat: 'yy-mm-dd'   
-           });
            $(function(){  
-                $("#from_date").datepicker();  
-                $("#to_date").datepicker();  
+                $("#from_date").datetimepicker();  
+                $("#to_date").datetimepicker();  
            });  
            $('#filter').click(function(){  
                 var from_date = $('#from_date').val();  
