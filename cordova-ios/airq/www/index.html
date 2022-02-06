@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <title>AirQualityMonitor</title>
+    </head>
+    <body>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#" id="graph"><li>Графички Извештај</li></a>
+                <a href="#" id="tbl"><li>Табеларен Извештај</li></a>
+              </ul>
+            </div>
+          </nav>
+        
+    <h3 style="font-weight: 600;font-family: 'Courier New', Courier, bold;">Мониторинг на квалитет на воздух</h3>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+
+                </div>
+            </div>
+        </div>
+
+
+        <svg id="s1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="progress">
+            <defs>
+                <linearGradient id="GradientColor">
+                     <stop offset="0%" stop-color="red" />
+                     <stop offset="50%" stop-color="yellow" />
+                          <stop offset="100%" stop-color="green" />
+
+                <!--
+                    <stop offset="0%" stop-color="#000000d7 " />
+                    <stop offset="200%" stop-color="#000000d7 " /> -->
+                </linearGradient>
+            </defs>
+
+            <circle id = "k1" class="progressCircle" cx="80" cy="80" r="70" stroke-linecap="round" fill='transparent'
+                stroke='black' stroke-width='5' />
+            <!-- text Count -->
+            <text class="loading" fill='black' x='80' y='80' text-anchor='middle' alignment-baseline='middle'></text>
+        </svg>
+
+        
+    </div>
+    
+
+
+
+
+    <div class="skill2">
+        <div class="outer2">
+            <div class="inner2">
+                <div id="number2">
+
+                </div>
+            </div>
+        </div>
+
+
+        <svg id="s2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="progress2">
+            <defs>
+                <linearGradient id="GradientColor2">
+                     <stop offset="0%" stop-color="red" />
+                     <stop offset="50%" stop-color="yellow" />
+                          <stop offset="100%" stop-color="green" />
+
+                <!--
+                    <stop offset="0%" stop-color="#000000d7 " />
+                    <stop offset="200%" stop-color="#000000d7 " /> -->
+                </linearGradient>
+            </defs>
+
+            <circle id = "k2" class="progressCircle2" cx="80" cy="80" r="70" stroke-linecap="round" fill='transparent'
+                stroke='black' stroke-width='5' />
+            <!-- text Count -->
+            <text class="loading" fill='black' x='80' y='80' text-anchor='middle' alignment-baseline='middle'></text>
+        </svg>
+        <i class="fa fa-thermometer-half" id= "therm" style="font-size:40px;color:red;margin-left: -20px;"></i>
+        <h5 id="temp" style="font-size: 15px;font-weight: 600;font-family: 'Courier New', Courier, monospace; margin-left: -20px;"></h5>
+        <i class="fa fa-tint" style="font-size:40px;color:blue;margin-left: -20px;"></i>
+        <h5 id="hum" style="font-size: 15px;font-weight: 600;font-family: 'Courier New', Courier, monospace; margin-left: -20px;"></h5>
+        <h5 style="font-size: 15px;font-weight: 600;font-family: 'Courier New', Courier, monospace;margin-left: -60px;">Последно мерење: </h5>
+        <h5 id="lu" style="font-size: 15px;font-weight: 600;font-family: 'Courier New', Courier, monospace;margin-left: -60px;"></h5>
+    </div>
+
+        
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/noscroll.js"></script>
+        <script src="js/all.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/jquery.mobile-events.js"></script>
+    </body>
+</html>
