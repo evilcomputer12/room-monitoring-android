@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		D8A7CE2E8A2A4157AA92B0B3 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A4E735B04943AB8E7C4CD4 /* CDVDevice.m */; };
+		056418B88D9B4757BEBFDF27 /* APPBackgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 038CF5F507D14FB995B69963 /* APPBackgroundMode.m */; };
+		29D4A63369B94FBB95EE6F69 /* APPMethodMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = C55B65931D89456D89DB4F1E /* APPMethodMagic.m */; };
+		82603FD1BC2C4566B0445783 /* appbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE3D9EF401594902AE9AB362 /* appbeep.wav */; };
+		108556F7E5A441BB8FA3854E /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = E854C41065A04AED89F6BBC0 /* APPBadge.m */; };
+		BF303F59A8CB40A383897555 /* BrowserPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8914B3AFD6436982E425F5 /* BrowserPlugin.m */; };
+		0C741D77E129484DA3C5D657 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0772B955F8E948A88352B73E /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D3EA6F42D0DB498EBE7A3CFC /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9613ACE240CC41F9A54EADFB /* CDVInAppBrowserOptions.m */; };
+		05C57457D3CD4E898C4B9FF7 /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E196E9CB6794B7AA81F9801 /* CDVInAppBrowserNavigationController.m */; };
+		5B2DB3B4FE7D4D44A397E232 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 97043B0B52A94D0DACF998BF /* CDVWKInAppBrowser.m */; };
+		7D95B601440C435B816B6F88 /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB73F7471F4FD6B23A24D2 /* CDVWKInAppBrowserUIDelegate.m */; };
+		0E98CA215F9C43BC80FFC196 /* APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6CB0BD9E6C40439237490D /* APPLocalNotification.m */; };
+		BF02AC8D8AD5430C9AED879F /* APPNotificationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCF6FAB6CE419DB23EE866 /* APPNotificationCategory.m */; };
+		A6E9FBF25CB8425D9601131B /* APPNotificationContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8B8F75D1400EAE44A0B0 /* APPNotificationContent.m */; };
+		380BFDD643434EED958205E8 /* APPNotificationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C728076E154382BF307835 /* APPNotificationOptions.m */; };
+		571EC1E5628B4408A85FCFA6 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A222CB0ECC4CD7AEEBC8A5 /* UNUserNotificationCenter+APPLocalNotification.m */; };
+		2026CCFF67624DDEB113D960 /* UNNotificationRequest+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FAC789C714B6499A59385 /* UNNotificationRequest+APPLocalNotification.m */; };
+		12F5D4A0E9D448519FCE0479 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBC353D935846728A3F13E5 /* UserNotifications.framework */; };
+		A9945C413CE74F21B35F988A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3107E4E68C24DD299ACF5DB /* CoreLocation.framework */; };
+		547A55A1838841AD924A798A /* APPPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = D55B4FC947E94FB28751B574 /* APPPrinter.m */; };
+		33E4EC44C8B7484580DC8FB4 /* APPPrinterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F11D85568C43179223CE29 /* APPPrinterInfo.m */; };
+		2A87BA5BE1BC4E21ACEF93E5 /* APPPrinterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FD54BDA400B977174AE /* APPPrinterItem.m */; };
+		8DF973642967472BA85B8347 /* APPPrinterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1CF4EF38148DBAEBAFD7E /* APPPrinterLayout.m */; };
+		6DD6439BA4F4421EBE80A079 /* APPPrinterPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE587899D54377A5C8D4D3 /* APPPrinterPaper.m */; };
+		5AC0A90DE9174C019C42A205 /* APPPrinterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E615505344F478FB4E82BB6 /* APPPrinterRenderer.m */; };
+		7E2B3484960C402CA65D1E99 /* APPPrinterFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AE8A44AFFB45C6AE5A705C /* APPPrinterFont.m */; };
+		77CFD897B9054A40AF7FA89A /* APPPrinterUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6DF22DD4544D892FB1108 /* APPPrinterUnit.m */; };
+		95567147F19F4B3D80B87C66 /* UIPrintInteractionController+APPPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0D67A02BA4A3F9938F03E /* UIPrintInteractionController+APPPrinter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Air Quality Monitor/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Air Quality Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Quality Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Air Quality Monitor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Air Quality Monitor-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Air Quality Monitor/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Air Quality Monitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Air Quality Monitor-Info.plist"; path = "Air Quality Monitor/Air Quality Monitor-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Air Quality Monitor/config.xml"; sourceTree = "<group>"; };
+		C1A4E735B04943AB8E7C4CD4 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9B6E00450B134A07B02D58F0 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		038CF5F507D14FB995B69963 /* APPBackgroundMode.m */ = {isa = PBXFileReference; name = "APPBackgroundMode.m"; path = "cordova-plugin-background-mode/APPBackgroundMode.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C55B65931D89456D89DB4F1E /* APPMethodMagic.m */ = {isa = PBXFileReference; name = "APPMethodMagic.m"; path = "cordova-plugin-background-mode/APPMethodMagic.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B6FAA917063A433792633BB1 /* APPBackgroundMode.h */ = {isa = PBXFileReference; name = "APPBackgroundMode.h"; path = "cordova-plugin-background-mode/APPBackgroundMode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3F2216B391FC469999E5C6AE /* APPMethodMagic.h */ = {isa = PBXFileReference; name = "APPMethodMagic.h"; path = "cordova-plugin-background-mode/APPMethodMagic.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CE3D9EF401594902AE9AB362 /* appbeep.wav */ = {isa = PBXFileReference; name = "appbeep.wav"; path = "appbeep.wav"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E854C41065A04AED89F6BBC0 /* APPBadge.m */ = {isa = PBXFileReference; name = "APPBadge.m"; path = "cordova-plugin-badge/APPBadge.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0CA815DDB91A4FAF843F4B8E /* APPBadge.h */ = {isa = PBXFileReference; name = "APPBadge.h"; path = "cordova-plugin-badge/APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2E8914B3AFD6436982E425F5 /* BrowserPlugin.m */ = {isa = PBXFileReference; name = "BrowserPlugin.m"; path = "cordova-plugin-browser/BrowserPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A8571B05CC3A4F60A7208D44 /* BrowserPlugin.h */ = {isa = PBXFileReference; name = "BrowserPlugin.h"; path = "cordova-plugin-browser/BrowserPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0772B955F8E948A88352B73E /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		9613ACE240CC41F9A54EADFB /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4E196E9CB6794B7AA81F9801 /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		97043B0B52A94D0DACF998BF /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A9FB73F7471F4FD6B23A24D2 /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		05EF822E713541CAA0AB48C2 /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C93B767BBF874AF6B53425F5 /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		93757BD4657E41C8B744E1DD /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3785D9734C624387831226C1 /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FD6CB0BD9E6C40439237490D /* APPLocalNotification.m */ = {isa = PBXFileReference; name = "APPLocalNotification.m"; path = "cordova-plugin-local-notification/APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2CDCF6FAB6CE419DB23EE866 /* APPNotificationCategory.m */ = {isa = PBXFileReference; name = "APPNotificationCategory.m"; path = "cordova-plugin-local-notification/APPNotificationCategory.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		1BEA8B8F75D1400EAE44A0B0 /* APPNotificationContent.m */ = {isa = PBXFileReference; name = "APPNotificationContent.m"; path = "cordova-plugin-local-notification/APPNotificationContent.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		66C728076E154382BF307835 /* APPNotificationOptions.m */ = {isa = PBXFileReference; name = "APPNotificationOptions.m"; path = "cordova-plugin-local-notification/APPNotificationOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F5A222CB0ECC4CD7AEEBC8A5 /* UNUserNotificationCenter+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7D4FAC789C714B6499A59385 /* UNNotificationRequest+APPLocalNotification.m */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A3D753FE836345CB81F364CA /* APPLocalNotification.h */ = {isa = PBXFileReference; name = "APPLocalNotification.h"; path = "cordova-plugin-local-notification/APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D4E8D274BFE7491DB2E68F62 /* APPNotificationCategory.h */ = {isa = PBXFileReference; name = "APPNotificationCategory.h"; path = "cordova-plugin-local-notification/APPNotificationCategory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F456C5E7E7A64383A5250A87 /* APPNotificationContent.h */ = {isa = PBXFileReference; name = "APPNotificationContent.h"; path = "cordova-plugin-local-notification/APPNotificationContent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3225C09A667A4FCDA5E415AB /* APPNotificationOptions.h */ = {isa = PBXFileReference; name = "APPNotificationOptions.h"; path = "cordova-plugin-local-notification/APPNotificationOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		68298499E985465B98E7AD2F /* UNUserNotificationCenter+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNUserNotificationCenter+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D452840DBC64490289DC97F6 /* UNNotificationRequest+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4FBC353D935846728A3F13E5 /* UserNotifications.framework */ = {isa = PBXFileReference; name = "UserNotifications.framework"; path = "System/Library/Frameworks/UserNotifications.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F3107E4E68C24DD299ACF5DB /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D55B4FC947E94FB28751B574 /* APPPrinter.m */ = {isa = PBXFileReference; name = "APPPrinter.m"; path = "cordova-plugin-printer/APPPrinter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		94F11D85568C43179223CE29 /* APPPrinterInfo.m */ = {isa = PBXFileReference; name = "APPPrinterInfo.m"; path = "cordova-plugin-printer/APPPrinterInfo.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		54523FD54BDA400B977174AE /* APPPrinterItem.m */ = {isa = PBXFileReference; name = "APPPrinterItem.m"; path = "cordova-plugin-printer/APPPrinterItem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B1F1CF4EF38148DBAEBAFD7E /* APPPrinterLayout.m */ = {isa = PBXFileReference; name = "APPPrinterLayout.m"; path = "cordova-plugin-printer/APPPrinterLayout.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4BDE587899D54377A5C8D4D3 /* APPPrinterPaper.m */ = {isa = PBXFileReference; name = "APPPrinterPaper.m"; path = "cordova-plugin-printer/APPPrinterPaper.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2E615505344F478FB4E82BB6 /* APPPrinterRenderer.m */ = {isa = PBXFileReference; name = "APPPrinterRenderer.m"; path = "cordova-plugin-printer/APPPrinterRenderer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		46AE8A44AFFB45C6AE5A705C /* APPPrinterFont.m */ = {isa = PBXFileReference; name = "APPPrinterFont.m"; path = "cordova-plugin-printer/APPPrinterFont.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8DA6DF22DD4544D892FB1108 /* APPPrinterUnit.m */ = {isa = PBXFileReference; name = "APPPrinterUnit.m"; path = "cordova-plugin-printer/APPPrinterUnit.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A7D0D67A02BA4A3F9938F03E /* UIPrintInteractionController+APPPrinter.m */ = {isa = PBXFileReference; name = "UIPrintInteractionController+APPPrinter.m"; path = "cordova-plugin-printer/UIPrintInteractionController+APPPrinter.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CE32557A228348E7A7DACA83 /* APPPrinter.h */ = {isa = PBXFileReference; name = "APPPrinter.h"; path = "cordova-plugin-printer/APPPrinter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1DE7D51F559D4B56957C7BDA /* APPPrinterInfo.h */ = {isa = PBXFileReference; name = "APPPrinterInfo.h"; path = "cordova-plugin-printer/APPPrinterInfo.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6415898C6F284B82BA78C320 /* APPPrinterItem.h */ = {isa = PBXFileReference; name = "APPPrinterItem.h"; path = "cordova-plugin-printer/APPPrinterItem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1C019EE87B68481E8A2C21EC /* APPPrinterLayout.h */ = {isa = PBXFileReference; name = "APPPrinterLayout.h"; path = "cordova-plugin-printer/APPPrinterLayout.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		336575A064C54C89B69F9570 /* APPPrinterPaper.h */ = {isa = PBXFileReference; name = "APPPrinterPaper.h"; path = "cordova-plugin-printer/APPPrinterPaper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CE39B57DF2244BC09F0DED67 /* APPPrinterRenderer.h */ = {isa = PBXFileReference; name = "APPPrinterRenderer.h"; path = "cordova-plugin-printer/APPPrinterRenderer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		58C3C5C998294630AA65DE70 /* APPPrinterFont.h */ = {isa = PBXFileReference; name = "APPPrinterFont.h"; path = "cordova-plugin-printer/APPPrinterFont.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D10A8A3A741043BCA6B73342 /* APPPrinterUnit.h */ = {isa = PBXFileReference; name = "APPPrinterUnit.h"; path = "cordova-plugin-printer/APPPrinterUnit.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		76731B78B8BD4FFBAC155DC7 /* UIPrintInteractionController+APPPrinter.h */ = {isa = PBXFileReference; name = "UIPrintInteractionController+APPPrinter.h"; path = "cordova-plugin-printer/UIPrintInteractionController+APPPrinter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				0C741D77E129484DA3C5D657 /* SafariServices.framework in Frameworks */,
+				12F5D4A0E9D448519FCE0479 /* UserNotifications.framework in Frameworks */,
+				A9945C413CE74F21B35F988A /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "Air Quality Monitor/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Air Quality Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Air Quality Monitor-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "Air Quality Monitor";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Air Quality Monitor-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				CE3D9EF401594902AE9AB362 /* appbeep.wav */,
+			);
+			name = Resources;
+			path = "Air Quality Monitor/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0772B955F8E948A88352B73E /* SafariServices.framework */,
+				4FBC353D935846728A3F13E5 /* UserNotifications.framework */,
+				F3107E4E68C24DD299ACF5DB /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				C1A4E735B04943AB8E7C4CD4 /* CDVDevice.m */,
+				9B6E00450B134A07B02D58F0 /* CDVDevice.h */,
+				038CF5F507D14FB995B69963 /* APPBackgroundMode.m */,
+				C55B65931D89456D89DB4F1E /* APPMethodMagic.m */,
+				B6FAA917063A433792633BB1 /* APPBackgroundMode.h */,
+				3F2216B391FC469999E5C6AE /* APPMethodMagic.h */,
+				E854C41065A04AED89F6BBC0 /* APPBadge.m */,
+				0CA815DDB91A4FAF843F4B8E /* APPBadge.h */,
+				2E8914B3AFD6436982E425F5 /* BrowserPlugin.m */,
+				A8571B05CC3A4F60A7208D44 /* BrowserPlugin.h */,
+				9613ACE240CC41F9A54EADFB /* CDVInAppBrowserOptions.m */,
+				4E196E9CB6794B7AA81F9801 /* CDVInAppBrowserNavigationController.m */,
+				97043B0B52A94D0DACF998BF /* CDVWKInAppBrowser.m */,
+				A9FB73F7471F4FD6B23A24D2 /* CDVWKInAppBrowserUIDelegate.m */,
+				05EF822E713541CAA0AB48C2 /* CDVInAppBrowserOptions.h */,
+				C93B767BBF874AF6B53425F5 /* CDVInAppBrowserNavigationController.h */,
+				93757BD4657E41C8B744E1DD /* CDVWKInAppBrowser.h */,
+				3785D9734C624387831226C1 /* CDVWKInAppBrowserUIDelegate.h */,
+				FD6CB0BD9E6C40439237490D /* APPLocalNotification.m */,
+				2CDCF6FAB6CE419DB23EE866 /* APPNotificationCategory.m */,
+				1BEA8B8F75D1400EAE44A0B0 /* APPNotificationContent.m */,
+				66C728076E154382BF307835 /* APPNotificationOptions.m */,
+				F5A222CB0ECC4CD7AEEBC8A5 /* UNUserNotificationCenter+APPLocalNotification.m */,
+				7D4FAC789C714B6499A59385 /* UNNotificationRequest+APPLocalNotification.m */,
+				A3D753FE836345CB81F364CA /* APPLocalNotification.h */,
+				D4E8D274BFE7491DB2E68F62 /* APPNotificationCategory.h */,
+				F456C5E7E7A64383A5250A87 /* APPNotificationContent.h */,
+				3225C09A667A4FCDA5E415AB /* APPNotificationOptions.h */,
+				68298499E985465B98E7AD2F /* UNUserNotificationCenter+APPLocalNotification.h */,
+				D452840DBC64490289DC97F6 /* UNNotificationRequest+APPLocalNotification.h */,
+				D55B4FC947E94FB28751B574 /* APPPrinter.m */,
+				94F11D85568C43179223CE29 /* APPPrinterInfo.m */,
+				54523FD54BDA400B977174AE /* APPPrinterItem.m */,
+				B1F1CF4EF38148DBAEBAFD7E /* APPPrinterLayout.m */,
+				4BDE587899D54377A5C8D4D3 /* APPPrinterPaper.m */,
+				2E615505344F478FB4E82BB6 /* APPPrinterRenderer.m */,
+				46AE8A44AFFB45C6AE5A705C /* APPPrinterFont.m */,
+				8DA6DF22DD4544D892FB1108 /* APPPrinterUnit.m */,
+				A7D0D67A02BA4A3F9938F03E /* UIPrintInteractionController+APPPrinter.m */,
+				CE32557A228348E7A7DACA83 /* APPPrinter.h */,
+				1DE7D51F559D4B56957C7BDA /* APPPrinterInfo.h */,
+				6415898C6F284B82BA78C320 /* APPPrinterItem.h */,
+				1C019EE87B68481E8A2C21EC /* APPPrinterLayout.h */,
+				336575A064C54C89B69F9570 /* APPPrinterPaper.h */,
+				CE39B57DF2244BC09F0DED67 /* APPPrinterRenderer.h */,
+				58C3C5C998294630AA65DE70 /* APPPrinterFont.h */,
+				D10A8A3A741043BCA6B73342 /* APPPrinterUnit.h */,
+				76731B78B8BD4FFBAC155DC7 /* UIPrintInteractionController+APPPrinter.h */,
+			);
+			name = Plugins;
+			path = "Air Quality Monitor/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Air Quality Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Air Quality Monitor" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "Air Quality Monitor";
+			productName = "Air Quality Monitor";
+			productReference = 1D6058910D05DD3D006BFB54 /* Air Quality Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Air Quality Monitor" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Air Quality Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				82603FD1BC2C4566B0445783 /* appbeep.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/Air Quality Monitor/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				D8A7CE2E8A2A4157AA92B0B3 /* CDVDevice.m in Sources */,
+				056418B88D9B4757BEBFDF27 /* APPBackgroundMode.m in Sources */,
+				29D4A63369B94FBB95EE6F69 /* APPMethodMagic.m in Sources */,
+				108556F7E5A441BB8FA3854E /* APPBadge.m in Sources */,
+				BF303F59A8CB40A383897555 /* BrowserPlugin.m in Sources */,
+				D3EA6F42D0DB498EBE7A3CFC /* CDVInAppBrowserOptions.m in Sources */,
+				05C57457D3CD4E898C4B9FF7 /* CDVInAppBrowserNavigationController.m in Sources */,
+				5B2DB3B4FE7D4D44A397E232 /* CDVWKInAppBrowser.m in Sources */,
+				7D95B601440C435B816B6F88 /* CDVWKInAppBrowserUIDelegate.m in Sources */,
+				0E98CA215F9C43BC80FFC196 /* APPLocalNotification.m in Sources */,
+				BF02AC8D8AD5430C9AED879F /* APPNotificationCategory.m in Sources */,
+				A6E9FBF25CB8425D9601131B /* APPNotificationContent.m in Sources */,
+				380BFDD643434EED958205E8 /* APPNotificationOptions.m in Sources */,
+				571EC1E5628B4408A85FCFA6 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
+				2026CCFF67624DDEB113D960 /* UNNotificationRequest+APPLocalNotification.m in Sources */,
+				547A55A1838841AD924A798A /* APPPrinter.m in Sources */,
+				33E4EC44C8B7484580DC8FB4 /* APPPrinterInfo.m in Sources */,
+				2A87BA5BE1BC4E21ACEF93E5 /* APPPrinterItem.m in Sources */,
+				8DF973642967472BA85B8347 /* APPPrinterLayout.m in Sources */,
+				6DD6439BA4F4421EBE80A079 /* APPPrinterPaper.m in Sources */,
+				5AC0A90DE9174C019C42A205 /* APPPrinterRenderer.m in Sources */,
+				7E2B3484960C402CA65D1E99 /* APPPrinterFont.m in Sources */,
+				77CFD897B9054A40AF7FA89A /* APPPrinterUnit.m in Sources */,
+				95567147F19F4B3D80B87C66 /* UIPrintInteractionController+APPPrinter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air Quality Monitor/Air Quality Monitor-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Air Quality Monitor/Air Quality Monitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.airq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air Quality Monitor/Air Quality Monitor-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Air Quality Monitor/Air Quality Monitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.airq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Air Quality Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Air Quality Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

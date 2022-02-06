@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-browser",
+  "version": "2.0.0",
+  "description": "Open browser in your app",
+  "cordova": {
+    "id": "cordova-plugin-browser",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-browser.git"
+  },
+  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-browser/issues"
+  },
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-browser#readme",
+  "keywords": [
+    "cordova",
+    "browser",
+    "SFSafariViewController",
+    "Chrome Custom Tabs",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  }
+}
