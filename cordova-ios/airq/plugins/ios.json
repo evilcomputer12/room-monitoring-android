@@ -21,6 +21,9 @@
     },
     "cordova-plugin-printer": {
       "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.martin.airq"
     }
   },
   "dependent_plugins": {

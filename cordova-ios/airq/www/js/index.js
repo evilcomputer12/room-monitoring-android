@@ -23,6 +23,8 @@ document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
+    StatusBar.overlaysWebView(true);
+    StatusBar.styleDefault();
     cordova.plugins.backgroundMode.setEnabled(true);
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);

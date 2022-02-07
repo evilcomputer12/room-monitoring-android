@@ -35,6 +35,18 @@
             {
               "xml": "<feature name=\"Printer\"><param name=\"ios-package\" value=\"APPPrinter\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+              "count": 1
             }
           ]
         }
@@ -77,6 +89,9 @@
       "PACKAGE_NAME": "com.martin.airq"
     },
     "cordova-plugin-printer": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.martin.airq"
     }
   },
@@ -138,6 +153,14 @@
       "clobbers": [
         "cordova.plugins.printer"
       ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -147,6 +170,7 @@
     "cordova-plugin-browser": "2.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-local-notification": "0.9.0-beta.3",
-    "cordova-plugin-printer": "0.8.0"
+    "cordova-plugin-printer": "0.8.0",
+    "cordova-plugin-statusbar": "3.0.0"
   }
 }

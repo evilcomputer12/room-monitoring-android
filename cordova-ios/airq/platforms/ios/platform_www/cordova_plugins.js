@@ -56,6 +56,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.printer"
       ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -65,6 +73,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-browser": "2.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-local-notification": "0.9.0-beta.3",
-    "cordova-plugin-printer": "0.8.0"
+    "cordova-plugin-printer": "0.8.0",
+    "cordova-plugin-statusbar": "3.0.0"
   };
 });

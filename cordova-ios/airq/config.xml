@@ -9,4 +9,5 @@
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
 </widget>

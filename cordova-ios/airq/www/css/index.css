@@ -2,8 +2,8 @@
         {
         display: block;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 10px;
+        left: 10px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -113,7 +113,7 @@
         margin: -100px 0 0 -50px;
         padding: 50px;
         padding-top: 125px;
-        height: 150vh;
+        height: 500vh;
         
         background: #ededed;
         list-style-type: none;
