@@ -126,6 +126,8 @@
 
 <body>
     
+    <audio id="alarm" src="https://github.com/evilcomputer12/room-monitoring-android/blob/main/android-5+/airq/app/src/main/res/raw/alarm.mp3 preload="auto"></audio>
+    
     <h3 style="font-weight: 600;font-family: 'Courier New', Courier, bold;">Мониторинг на квалитет на воздух</h3>
     <div class="skill">
         <div class="outer">
@@ -237,9 +239,36 @@ function loadData() {
     
 }
         
-        
+function notifyMe() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("Веб пребарувачот не подржува нотификации");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Има големо загадување во просторијата !");
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("Има големо загадување во просторијата !");
+      }
+    });
+  }
+}
+      
         
 function doStuf(value1, value2, value3, value4, reading_time) {
+        if(value4 > 100 || value3 > 1000) {
+            //document.getElementById('alarm').play();
+            //alert("Има големо загадување во просторијата !");
+            notifyMe();
+        }else {alert(reading_time);}
     const circle = document.querySelector('.progressCircle');
         var number = document.getElementById('number');
         var counter = 0;
@@ -296,6 +325,8 @@ function doStuf(value1, value2, value3, value4, reading_time) {
         //emp.replaceWith(temp.innerHTML + val1+"°C");
         //hum.replaceWith(hum.innerHTML + val2+"%");
         //lu.replaceWith(lu.innerHTML+datetime);
+        
+        
 }
 </script>
 
