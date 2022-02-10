@@ -1,0 +1,58 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-browser": {
+      "ANDROIDX_BROWSER_VERSION": "1.0.+",
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-printer": {
+      "ANDROID_SUPPORT_V4_VERSION": "28.+",
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-cors": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-local-notification": {
+      "ANDROID_SUPPORT_V4_VERSION": "26.+",
+      "PACKAGE_NAME": "com.martin.airq"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.martin.airq"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.martin.airq"
+    }
+  }
+}

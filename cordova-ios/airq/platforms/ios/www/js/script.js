@@ -2,6 +2,11 @@ $(document).ready(function() {
     startLoop();
 });
 
+if (cordova.platformId == 'android') {
+    $("#menuToggle").css('top', '50px');
+    $("#menuToggle").css('left', '15px');
+}
+
 $('html, body').css({
     overflow: 'hidden',
     height: '100%',
@@ -30,48 +35,28 @@ function loadData() {
     
 }
 
-
-
-        
-// function notifyMe() {
-//   // Let's check if the browser supports notifications
-//   if (!("Notification" in window)) {
-//     alert("Веб пребарувачот не подржува нотификации");
-//   }
-
-//   // Let's check whether notification permissions have already been granted
-//   else if (Notification.permission === "granted") {
-//     // If it's okay let's create a notification
-//     var notification = new Notification("Има големо загадување во просторијата !");
-//   }
-
-//   // Otherwise, we need to ask the user for permission
-//   else if (Notification.permission !== "denied") {
-//     Notification.requestPermission().then(function (permission) {
-//       // If the user accepts, let's create a notification
-//       if (permission === "granted") {
-//         var notification = new Notification("Има големо загадување во просторијата !");
-//       }
-//     });
-//   }
-// }
     function notifyMe(){
-        // var audio = new Audio('raw/alarm.mp3');
-        // audio.play();
-        // audio.onended = function () {alert("Има големо загадување во просторијата !");}
+        
         cordova.plugins.notification.local.schedule({
             title: 'Аларм!',
-            text: 'Има големо загадување во просторијата !',
-            foreground: true
+            text: 'Има големо загадување во просторијата ! ',
+            foreground: true,
+            vibrate: true,
         });
+
+        if (cordova.platformId == 'android') {
+        var audio = new Audio('raw/alarm.mp3');
+        audio.play();
+        navigator.vibrate(1000);
+        }
         
 
     }  
-        
+    
 function doStuf(value1, value2, value3, value4, reading_time) {
         if(value4 > 100 || value3 > 1000) {
             notifyMe();
-        }else {alert(reading_time);}
+        }
     const circle = document.querySelector('.progressCircle');
         var number = document.getElementById('number');
         var counter = 0;
@@ -132,4 +117,5 @@ function doStuf(value1, value2, value3, value4, reading_time) {
           $( "#tbl" ).click(function() {
             cordova.plugins.browser.open("https://marvelroommonitor.000webhostapp.com/history-table.php", {readerMode: true});
           });
+          
 }

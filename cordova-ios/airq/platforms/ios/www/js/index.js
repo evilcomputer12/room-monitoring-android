@@ -24,9 +24,17 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     StatusBar.overlaysWebView(true);
-    StatusBar.styleDefault();
+    StatusBar.styleDefault();  
     cordova.plugins.backgroundMode.setEnabled(true);
+    cordova.plugins.backgroundMode.overrideBackButton();
+
+    cordova.plugins.backgroundMode.isScreenOff(function(bool) {
+        cordova.plugins.backgroundMode.wakeUp();
+    });
+
+    cordova.plugins.backgroundMode.disableWebViewOptimizations();
+    cordova.plugins.backgroundMode.disableBatteryOptimizations();
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+    //document.getElementById('deviceready').classList.add('ready');
 }
