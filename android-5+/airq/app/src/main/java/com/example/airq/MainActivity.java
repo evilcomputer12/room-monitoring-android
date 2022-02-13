@@ -66,8 +66,10 @@ public class MainActivity extends AppCompatActivity {
         boolean alreadyExecuted = false;
         getData();
         if(!alreadyExecuted) {
-            data();
-            dooze();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                data();
+                dooze();
+            }
             alreadyExecuted = true;
         }
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){

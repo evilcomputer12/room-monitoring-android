@@ -122,7 +122,7 @@ public class ActivityMain3 extends AppCompatActivity {
             final String url = "/history-table.php";
             final String url1 = "/chart-data.php";
             swipeLayout = findViewById(R.id.swipe_container);
-            webView.loadUrl(webServer+url);
+            webView.loadUrl(webServer+url1);
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
             webSettings.setDomStorageEnabled(true);
